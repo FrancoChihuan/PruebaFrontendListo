@@ -78,6 +78,7 @@ export type DashboardCourse = {
   secondaryColor: string;
 };
 
+// funcion para hacer login y obtener token
 async function login(): Promise<RawLoginResponse> {
   const response = await fetch(`${API_BASE_URL}/auth/login-app`, {
     method: "POST",
@@ -87,7 +88,7 @@ async function login(): Promise<RawLoginResponse> {
       password: "71755767",
       rememberMe: false,
     }),
-    cache: "no-store",
+    cache: "no-store", //siempre pedir al servidor
   });
 
   if (!response.ok) {

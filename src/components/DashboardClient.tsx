@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState } from "react"; //hooks
 import { motion } from "framer-motion";
 import { Filter, Search, Sparkles } from "lucide-react";
 import Encabezado from "./Encabezado";
